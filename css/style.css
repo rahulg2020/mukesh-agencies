@@ -1,0 +1,56 @@
+/* css/style.css - Asian Paints inspired theme (blue + yellow accents) */
+:root{
+  --brand:#0b4f76;
+  --accent:#f9b233;
+  --muted:#6b7280;
+  --bg:#fcfdff;
+  --container:1100px;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial; margin:0; color:#0b2b3a; background:var(--bg)}
+.container{max-width:var(--container); margin:0 auto; padding:20px}
+.site-header{background:var(--brand); color:white; position:sticky; top:0; z-index:50}
+.site-header .container{display:flex; align-items:center; justify-content:space-between; gap:20px}
+.brand{display:flex; align-items:center; gap:12px}
+.logo{width:68px; height:68px; object-fit:contain; background:white; padding:6px; border-radius:8px}
+.brand-text h1{margin:0; font-size:18px; color:white}
+.tagline{margin:0; font-size:13px; color:var(--accent); font-weight:600}
+.nav a{color:white; margin-left:18px; text-decoration:none; font-weight:600}
+.hero{position:relative; height:340px; overflow:hidden}
+.hero .hero-bg{width:100%; height:340px; object-fit:cover; display:block}
+.hero-overlay{position:absolute; left:20px; top:50%; transform:translateY(-50%); color:white; background:linear-gradient(180deg, rgba(11,79,118,0.75), rgba(11,79,118,0.45)); padding:24px; border-radius:10px; max-width:520px}
+.hero-overlay h2{margin:0 0 8px; font-size:28px}
+.hero-overlay .subtitle{margin:0 0 14px; color: #fff9e6}
+.btn{background:var(--accent); color:var(--brand); padding:10px 14px; border-radius:8px; text-decoration:none; font-weight:700}
+.container section{margin-top:28px}
+.brands .brand-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); gap:12px; align-items:center}
+.site-footer{background:#062631; color:white; padding:14px 0; margin-top:28px; text-align:center}
+.page-hero.small{height:180px; position:relative; overflow:hidden}
+.page-hero.small .hero-bg{width:100%; height:180px; object-fit:cover}
+.page-hero.small .hero-overlay{position:absolute; left:20px; top:50%; transform:translateY(-50%); color:white; background:linear-gradient(180deg, rgba(11,79,118,0.75), rgba(11,79,118,0.45)); padding:12px; border-radius:8px}
+
+.product-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px}
+.product{background:white; padding:14px; border-radius:10px; text-align:center; box-shadow:0 8px 20px rgba(2,6,23,0.06)}
+.product img{width:120px; height:100px; object-fit:contain; margin-bottom:8px}
+.contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:20px}
+
+/* Floating WhatsApp & Call buttons */
+.whatsapp-float{position:fixed; right:18px; bottom:18px; z-index:100; width:56px; height:56px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:#25D366; box-shadow:0 8px 20px rgba(2,6,23,0.2); animation: pulse 2.4s infinite}
+.whatsapp-float img{width:28px; height:28px}
+.call-float{position:fixed; right:18px; bottom:86px; z-index:100; width:56px; height:56px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:#1e88e5; color:white; box-shadow:0 8px 20px rgba(2,6,23,0.2)}
+
+/* small screens */
+@media(max-width:900px){
+  .hero{height:260px}
+  .hero .hero-bg{height:260px}
+  .hero-overlay{left:12px; right:12px; max-width:none}
+  .contact-grid{grid-template-columns:1fr}
+  .nav a{display:none}
+  .brand-text{display:none}
+}
+
+@keyframes pulse{
+  0%{transform:scale(1)}
+  50%{transform:scale(1.06)}
+  100%{transform:scale(1)}
+}

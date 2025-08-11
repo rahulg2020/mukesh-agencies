@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact — Mukesh Agencies</title>
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+<script defer src="js/contact.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <div class="brand">
+      <img src="assets/logo_full.png" alt="Mukesh Agencies" class="logo">
+      <div class="brand-text">
+        <h1>Mukesh Agencies</h1>
+        <p class="tagline">Complete Building Solution</p>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero small">
+  <img src="images/contact-banner.svg" alt="Contact banner" class="hero-bg">
+  <div class="hero-overlay">
+    <h2>Contact Us</h2>
+  </div>
+</section>
+
+<main class="container contact-grid">
+  <div>
+    <h3>Get in touch</h3>
+    <p><strong>Phone:</strong> <a href="tel:+918447343213">+91 84473 43213</a></p>
+    <p><strong>Email:</strong> <a href="mailto:mukeshagencies1992@gmail.com">mukeshagencies1992@gmail.com</a></p>
+    <p><strong>Address:</strong> Mukesh Agencies, Faridabad, Haryana</p>
+    <p><a class="btn" href="https://wa.me/918447343213" target="_blank">Chat on WhatsApp</a></p>
+  </div>
+  <div>
+    <h3>Send a message</h3>
+    <form onsubmit="return sendMail(event)">
+      <label>Name<input type="text" id="name" required></label>
+      <label>Email<input type="email" id="email" required></label>
+      <label>Message<textarea id="message" rows="5" required></textarea></label>
+      <button class="btn" type="submit">Send</button>
+      <p class="note">This will open your email client to send message to mukeshagencies1992@gmail.com</p>
+    </form>
+  </div>
+</main>
+
+<section class="map container">
+  <h3>Find us</h3>
+  <iframe title="map" width="100%" height="300" style="border:0" loading="lazy"
+    src="https://www.google.com/maps?q=Mukesh%20Agencies%20Faridabad%20Haryana&output=embed"></iframe>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>© 2025 Mukesh Agencies</div>
+  </div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/918447343213?text=Hello%2C%20I%27m%20interested%20in%20your%20building%20materials." target="_blank" rel="noopener">
+  <img src="assets/whatsapp_white.png" alt="WhatsApp">
+</a>
+<a class="call-float" href="tel:+918447343213" aria-label="Call now">📞</a>
+
+</body>
+</html>
